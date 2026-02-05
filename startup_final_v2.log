@@ -1,0 +1,409 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------------< com.cms:cms >-----------------------------
+[INFO] Building cms 1.0.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.2:run (default-cli) > test-compile @ cms >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ cms ---
+[INFO] Copying 3 resources from src\main\resources to target\classes
+[INFO] Copying 6 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ cms ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ cms ---
+[INFO] skip non existing resourceDirectory C:\Users\sree\Desktop\cms\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ cms ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.2.2:run (default-cli) < test-compile @ cms <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.2:run (default-cli) @ cms ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2026-02-03T23:43:56.367+05:30  INFO 18192 --- [cms] [           main] com.cms.CmsApplication                   : Starting CmsApplication using Java 25.0.2 with PID 18192 (C:\Users\sree\Desktop\cms\target\classes started by sree in C:\Users\sree\Desktop\cms)
+2026-02-03T23:43:56.369+05:30 DEBUG 18192 --- [cms] [           main] com.cms.CmsApplication                   : Running with Spring Boot v3.2.2, Spring v6.1.3
+2026-02-03T23:43:56.370+05:30  INFO 18192 --- [cms] [           main] com.cms.CmsApplication                   : No active profile set, falling back to 1 default profile: "default"
+2026-02-03T23:43:57.485+05:30  INFO 18192 --- [cms] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-03T23:43:57.578+05:30  INFO 18192 --- [cms] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 9 JPA repository interfaces.
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/C:/Users/sree/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.18/tomcat-embed-core-10.1.18.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2026-02-03T23:43:58.239+05:30  INFO 18192 --- [cms] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-03T23:43:58.251+05:30  INFO 18192 --- [cms] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-03T23:43:58.251+05:30  INFO 18192 --- [cms] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2026-02-03T23:43:58.321+05:30  INFO 18192 --- [cms] [           main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2026-02-03T23:43:58.322+05:30  INFO 18192 --- [cms] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1892 ms
+2026-02-03T23:43:58.446+05:30  INFO 18192 --- [cms] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-03T23:43:58.685+05:30  INFO 18192 --- [cms] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@486bd064
+2026-02-03T23:43:58.688+05:30  INFO 18192 --- [cms] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-03T23:43:59.683+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Reading from cms_db.databasechangelog
+2026-02-03T23:43:59.987+05:30  INFO 18192 --- [cms] [           main] liquibase.lockservice                    : Successfully acquired change log lock
+2026-02-03T23:43:59.990+05:30  INFO 18192 --- [cms] [           main] liquibase.command                        : Using deploymentId: 0142439989
+2026-02-03T23:43:59.992+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Reading from cms_db.databasechangelog
+Running Changeset: db/changelog/changes/001-create-users-table.yaml::001-create-users-table::cms-system
+2026-02-03T23:44:00.118+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Marking ChangeSet: "db/changelog/changes/001-create-users-table.yaml::001-create-users-table::cms-system" as ran despite precondition failure due to onFail='MARK_RAN': 
+          db/changelog/db.changelog-master.yaml : Not precondition failed
+
+Running Changeset: db/changelog/changes/001-create-users-table.yaml::001-create-refresh-tokens-table::cms-system
+2026-02-03T23:44:00.203+05:30  WARN 18192 --- [cms] [           main] liquibase.executor                       : Integer display width is deprecated and will be removed in a future release.
+2026-02-03T23:44:00.203+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Table refresh_tokens created
+2026-02-03T23:44:00.306+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to refresh_tokens (user_id)
+2026-02-03T23:44:00.332+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Index idx_refresh_tokens_token created
+2026-02-03T23:44:00.361+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Index idx_refresh_tokens_user_id created
+2026-02-03T23:44:00.362+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/001-create-users-table.yaml::001-create-refresh-tokens-table::cms-system ran successfully in 228ms
+Running Changeset: db/changelog/changes/002-create-roles-permissions.yaml::002-create-roles-table::cms-system
+2026-02-03T23:44:00.406+05:30  WARN 18192 --- [cms] [           main] liquibase.executor                       : Integer display width is deprecated and will be removed in a future release.
+2026-02-03T23:44:00.406+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Table roles created
+2026-02-03T23:44:00.407+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/002-create-roles-permissions.yaml::002-create-roles-table::cms-system ran successfully in 32ms
+Running Changeset: db/changelog/changes/002-create-roles-permissions.yaml::002-create-permissions-table::cms-system
+2026-02-03T23:44:00.445+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Table permissions created
+2026-02-03T23:44:00.471+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Index idx_permissions_resource_action created
+2026-02-03T23:44:00.471+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/002-create-roles-permissions.yaml::002-create-permissions-table::cms-system ran successfully in 57ms
+Running Changeset: db/changelog/changes/002-create-roles-permissions.yaml::002-create-user-roles-table::cms-system
+2026-02-03T23:44:00.509+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Table user_roles created
+2026-02-03T23:44:00.562+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Primary key added to user_roles (user_id, role_id)
+2026-02-03T23:44:00.620+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to user_roles (user_id)
+2026-02-03T23:44:00.702+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to user_roles (role_id)
+2026-02-03T23:44:00.703+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/002-create-roles-permissions.yaml::002-create-user-roles-table::cms-system ran successfully in 219ms
+Running Changeset: db/changelog/changes/002-create-roles-permissions.yaml::002-create-role-permissions-table::cms-system
+2026-02-03T23:44:00.745+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Table role_permissions created
+2026-02-03T23:44:00.801+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Primary key added to role_permissions (role_id, permission_id)
+2026-02-03T23:44:00.869+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to role_permissions (role_id)
+2026-02-03T23:44:00.925+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to role_permissions (permission_id)
+2026-02-03T23:44:00.926+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/002-create-roles-permissions.yaml::002-create-role-permissions-table::cms-system ran successfully in 210ms
+Running Changeset: db/changelog/changes/003-create-content-tables.yaml::003-create-categories-table::cms-system
+2026-02-03T23:44:00.963+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Table categories created
+2026-02-03T23:44:01.049+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to categories (parent_id)
+2026-02-03T23:44:01.077+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Index idx_categories_slug created
+2026-02-03T23:44:01.111+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Index idx_categories_parent_id created
+2026-02-03T23:44:01.112+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/003-create-content-tables.yaml::003-create-categories-table::cms-system ran successfully in 176ms
+Running Changeset: db/changelog/changes/003-create-content-tables.yaml::003-create-tags-table::cms-system
+2026-02-03T23:44:01.158+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Table tags created
+2026-02-03T23:44:01.181+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Index idx_tags_slug created
+2026-02-03T23:44:01.182+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/003-create-content-tables.yaml::003-create-tags-table::cms-system ran successfully in 58ms
+Running Changeset: db/changelog/changes/003-create-content-tables.yaml::003-create-contents-table::cms-system
+2026-02-03T23:44:01.233+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Table contents created
+2026-02-03T23:44:01.306+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to contents (author_id)
+2026-02-03T23:44:01.330+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Index idx_contents_slug created
+2026-02-03T23:44:01.355+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Index idx_contents_status created
+2026-02-03T23:44:01.377+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Index idx_contents_type created
+2026-02-03T23:44:01.400+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Index idx_contents_author_id created
+2026-02-03T23:44:01.424+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Index idx_contents_published_at created
+2026-02-03T23:44:01.425+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/003-create-content-tables.yaml::003-create-contents-table::cms-system ran successfully in 231ms
+Running Changeset: db/changelog/changes/003-create-content-tables.yaml::003-create-content-meta-table::cms-system
+2026-02-03T23:44:01.470+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Table content_meta created
+2026-02-03T23:44:01.534+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to content_meta (content_id)
+2026-02-03T23:44:01.556+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Index idx_content_meta_content_key created
+2026-02-03T23:44:01.556+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/003-create-content-tables.yaml::003-create-content-meta-table::cms-system ran successfully in 121ms
+Running Changeset: db/changelog/changes/003-create-content-tables.yaml::003-create-content-revisions-table::cms-system
+2026-02-03T23:44:01.592+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Table content_revisions created
+2026-02-03T23:44:01.650+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to content_revisions (content_id)
+2026-02-03T23:44:01.710+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to content_revisions (author_id)
+2026-02-03T23:44:01.732+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Index idx_content_revisions_content_id created
+2026-02-03T23:44:01.733+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/003-create-content-tables.yaml::003-create-content-revisions-table::cms-system ran successfully in 164ms
+Running Changeset: db/changelog/changes/003-create-content-tables.yaml::003-create-content-categories-table::cms-system
+2026-02-03T23:44:01.763+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Table content_categories created
+2026-02-03T23:44:01.805+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Primary key added to content_categories (content_id, category_id)
+2026-02-03T23:44:01.951+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to content_categories (content_id)
+2026-02-03T23:44:02.038+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to content_categories (category_id)
+2026-02-03T23:44:02.039+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/003-create-content-tables.yaml::003-create-content-categories-table::cms-system ran successfully in 297ms
+Running Changeset: db/changelog/changes/003-create-content-tables.yaml::003-create-content-tags-table::cms-system
+2026-02-03T23:44:02.077+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Table content_tags created
+2026-02-03T23:44:02.140+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Primary key added to content_tags (content_id, tag_id)
+2026-02-03T23:44:02.218+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to content_tags (content_id)
+2026-02-03T23:44:02.282+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to content_tags (tag_id)
+2026-02-03T23:44:02.284+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/003-create-content-tables.yaml::003-create-content-tags-table::cms-system ran successfully in 234ms
+Running Changeset: db/changelog/changes/004-create-media-table.yaml::004-create-media-table::cms-system
+2026-02-03T23:44:02.323+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Table media created
+2026-02-03T23:44:02.395+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to media (uploader_id)
+2026-02-03T23:44:02.421+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Index idx_media_uploader_id created
+2026-02-03T23:44:02.439+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Index idx_media_mime_type created
+2026-02-03T23:44:02.457+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Index idx_media_created_at created
+2026-02-03T23:44:02.457+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/004-create-media-table.yaml::004-create-media-table::cms-system ran successfully in 161ms
+Running Changeset: db/changelog/changes/004-create-media-table.yaml::004-add-featured-image-fk::cms-system
+2026-02-03T23:44:02.563+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to contents (featured_image_id)
+2026-02-03T23:44:02.564+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/004-create-media-table.yaml::004-add-featured-image-fk::cms-system ran successfully in 100ms
+Running Changeset: db/changelog/changes/005-seed-initial-data.yaml::005-seed-permissions::cms-system
+2026-02-03T23:44:02.579+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:44:02.580+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:44:02.582+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:44:02.584+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:44:02.585+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:44:02.587+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:44:02.588+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:44:02.590+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:44:02.592+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:44:02.593+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:44:02.594+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:44:02.595+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:44:02.597+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:44:02.599+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:44:02.601+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/005-seed-initial-data.yaml::005-seed-permissions::cms-system ran successfully in 25ms
+Running Changeset: db/changelog/changes/005-seed-initial-data.yaml::005-seed-roles::cms-system
+2026-02-03T23:44:02.612+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : New row inserted into roles
+2026-02-03T23:44:02.614+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : New row inserted into roles
+2026-02-03T23:44:02.615+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : New row inserted into roles
+2026-02-03T23:44:02.616+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : New row inserted into roles
+2026-02-03T23:44:02.619+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/005-seed-initial-data.yaml::005-seed-roles::cms-system ran successfully in 10ms
+Running Changeset: db/changelog/changes/005-seed-initial-data.yaml::005-seed-admin-permissions::cms-system
+2026-02-03T23:44:02.635+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Custom SQL executed
+2026-02-03T23:44:02.636+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/005-seed-initial-data.yaml::005-seed-admin-permissions::cms-system ran successfully in 12ms
+Running Changeset: db/changelog/changes/005-seed-initial-data.yaml::005-seed-editor-permissions::cms-system
+2026-02-03T23:44:02.645+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Custom SQL executed
+2026-02-03T23:44:02.648+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/005-seed-initial-data.yaml::005-seed-editor-permissions::cms-system ran successfully in 7ms
+Running Changeset: db/changelog/changes/005-seed-initial-data.yaml::005-seed-author-permissions::cms-system
+2026-02-03T23:44:02.657+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Custom SQL executed
+2026-02-03T23:44:02.659+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/005-seed-initial-data.yaml::005-seed-author-permissions::cms-system ran successfully in 6ms
+Running Changeset: db/changelog/changes/005-seed-initial-data.yaml::005-seed-viewer-permissions::cms-system
+2026-02-03T23:44:02.667+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : Custom SQL executed
+2026-02-03T23:44:02.669+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/005-seed-initial-data.yaml::005-seed-viewer-permissions::cms-system ran successfully in 5ms
+Running Changeset: db/changelog/changes/005-seed-initial-data.yaml::005-seed-default-category::cms-system
+2026-02-03T23:44:02.679+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : New row inserted into categories
+2026-02-03T23:44:02.682+05:30  INFO 18192 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/005-seed-initial-data.yaml::005-seed-default-category::cms-system ran successfully in 8ms
+2026-02-03T23:44:02.692+05:30  INFO 18192 --- [cms] [           main] liquibase.util                           : UPDATE SUMMARY
+2026-02-03T23:44:02.692+05:30  INFO 18192 --- [cms] [           main] liquibase.util                           : Run:                         22
+2026-02-03T23:44:02.693+05:30  INFO 18192 --- [cms] [           main] liquibase.util                           : Previously run:               0
+2026-02-03T23:44:02.693+05:30  INFO 18192 --- [cms] [           main] liquibase.util                           : Filtered out:                 0
+2026-02-03T23:44:02.693+05:30  INFO 18192 --- [cms] [           main] liquibase.util                           : -------------------------------
+2026-02-03T23:44:02.693+05:30  INFO 18192 --- [cms] [           main] liquibase.util                           : Total change sets:           22
+2026-02-03T23:44:02.693+05:30  INFO 18192 --- [cms] [           main] liquibase.util                           : Update summary generated
+2026-02-03T23:44:02.694+05:30  INFO 18192 --- [cms] [           main] liquibase.command                        : Update command completed successfully.
+Liquibase: Update has been successful. Rows affected: 72
+2026-02-03T23:44:02.698+05:30  INFO 18192 --- [cms] [           main] liquibase.lockservice                    : Successfully released change log lock
+2026-02-03T23:44:02.699+05:30  INFO 18192 --- [cms] [           main] liquibase.command                        : Command execution complete
+2026-02-03T23:44:02.790+05:30  INFO 18192 --- [cms] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-03T23:44:02.869+05:30  INFO 18192 --- [cms] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2026-02-03T23:44:02.924+05:30  INFO 18192 --- [cms] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-03T23:44:03.206+05:30  INFO 18192 --- [cms] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-03T23:44:03.263+05:30  WARN 18192 --- [cms] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-03T23:44:04.902+05:30  INFO 18192 --- [cms] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-03T23:44:04.906+05:30  INFO 18192 --- [cms] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-03T23:44:05.307+05:30  INFO 18192 --- [cms] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-03T23:44:06.164+05:30 DEBUG 18192 --- [cms] [           main] c.cms.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2026-02-03T23:44:06.837+05:30  INFO 18192 --- [cms] [           main] com.cms.service.LocalStorageService      : Upload directory initialized: C:\Users\sree\Desktop\cms\uploads
+2026-02-03T23:44:07.503+05:30  INFO 18192 --- [cms] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6858f4d9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1fecdf9f, org.springframework.security.web.context.SecurityContextHolderFilter@14ed0f42, org.springframework.security.web.header.HeaderWriterFilter@693d7da5, org.springframework.web.filter.CorsFilter@620574ab, org.springframework.web.filter.CorsFilter@337f3b20, org.springframework.security.web.authentication.logout.LogoutFilter@13e7d3d7, com.cms.security.JwtAuthenticationFilter@2d034bca, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6e206b5c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78a0bec, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1caeefaa, org.springframework.security.web.session.SessionManagementFilter@2f60ab6d, org.springframework.security.web.access.ExceptionTranslationFilter@3ca7f56, org.springframework.security.web.access.intercept.AuthorizationFilter@65b304e5]
+2026-02-03T23:44:07.881+05:30  INFO 18192 --- [cms] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2026-02-03T23:44:07.891+05:30  INFO 18192 --- [cms] [           main] com.cms.CmsApplication                   : Started CmsApplication in 12.068 seconds (process running for 12.605)
+2026-02-03T23:44:07.895+05:30  INFO 18192 --- [cms] [           main] com.cms.config.DataInitializer           : Starting data initialization...
+2026-02-03T23:44:08.029+05:30 DEBUG 18192 --- [cms] [           main] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.created_at,
+        r1_0.description,
+        r1_0.is_system,
+        r1_0.name 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-02-03T23:44:08.058+05:30 DEBUG 18192 --- [cms] [           main] org.hibernate.SQL                        : 
+    select
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource 
+    from
+        role_permissions p1_0 
+    join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        p1_0.role_id=?
+2026-02-03T23:44:08.067+05:30 DEBUG 18192 --- [cms] [           main] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.created_at,
+        r1_0.description,
+        r1_0.is_system,
+        r1_0.name 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-02-03T23:44:08.069+05:30 DEBUG 18192 --- [cms] [           main] org.hibernate.SQL                        : 
+    select
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource 
+    from
+        role_permissions p1_0 
+    join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        p1_0.role_id=?
+2026-02-03T23:44:08.072+05:30 DEBUG 18192 --- [cms] [           main] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.created_at,
+        r1_0.description,
+        r1_0.is_system,
+        r1_0.name 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-02-03T23:44:08.074+05:30 DEBUG 18192 --- [cms] [           main] org.hibernate.SQL                        : 
+    select
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource 
+    from
+        role_permissions p1_0 
+    join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        p1_0.role_id=?
+2026-02-03T23:44:08.079+05:30 DEBUG 18192 --- [cms] [           main] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.display_name,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password_hash,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-03T23:44:08.088+05:30  WARN 18192 --- [cms] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1054, SQLState: 42S22
+2026-02-03T23:44:08.089+05:30 ERROR 18192 --- [cms] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unknown column 'u1_0.avatar_url' in 'field list'
+2026-02-03T23:44:08.097+05:30  INFO 18192 --- [cms] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-03T23:44:08.110+05:30 ERROR 18192 --- [cms] [           main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.dao.InvalidDataAccessResourceUsageException: JDBC exception executing SQL [select u1_0.id,u1_0.avatar_url,u1_0.created_at,u1_0.display_name,u1_0.email,u1_0.is_active,u1_0.password_hash,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.email=?] [Unknown column 'u1_0.avatar_url' in 'field list'] [n/a]; SQL [n/a]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:277) ~[spring-orm-6.1.3.jar:6.1.3]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241) ~[spring-orm-6.1.3.jar:6.1.3]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550) ~[spring-orm-6.1.3.jar:6.1.3]
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61) ~[spring-tx-6.1.3.jar:6.1.3]
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335) ~[spring-tx-6.1.3.jar:6.1.3]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152) ~[spring-tx-6.1.3.jar:6.1.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.3.jar:6.1.3]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135) ~[spring-data-jpa-3.2.2.jar:3.2.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.3.jar:6.1.3]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.3.jar:6.1.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.3.jar:6.1.3]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220) ~[spring-aop-6.1.3.jar:6.1.3]
+	at jdk.proxy2/jdk.proxy2.$Proxy156.findByEmail(Unknown Source) ~[na:na]
+	at com.cms.config.DataInitializer.createAdminUser(DataInitializer.java:68) ~[classes/:na]
+	at com.cms.config.DataInitializer.lambda$initData$0(DataInitializer.java:31) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:790) ~[spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:83) ~[spring-core-6.1.3.jar:6.1.3]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.1.3.jar:6.1.3]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:88) ~[spring-core-6.1.3.jar:6.1.3]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798) ~[spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:789) ~[spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:774) ~[spring-boot-3.2.2.jar:3.2.2]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:571) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:774) ~[spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:341) ~[spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.2.jar:3.2.2]
+	at com.cms.CmsApplication.main(CmsApplication.java:12) ~[classes/:na]
+Caused by: org.hibernate.exception.SQLGrammarException: JDBC exception executing SQL [select u1_0.id,u1_0.avatar_url,u1_0.created_at,u1_0.display_name,u1_0.email,u1_0.is_active,u1_0.password_hash,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.email=?] [Unknown column 'u1_0.avatar_url' in 'field list'] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:66) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:265) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:167) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.advanceNext(JdbcValuesResultSetImpl.java:218) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.processNext(JdbcValuesResultSetImpl.java:98) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.sql.results.jdbc.internal.AbstractJdbcValues.next(AbstractJdbcValues.java:19) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.sql.results.internal.RowProcessingStateStandardImpl.next(RowProcessingStateStandardImpl.java:66) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:203) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:33) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:209) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:83) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:76) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:65) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$2(ConcreteSqmSelectQueryPlan.java:137) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:359) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:300) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.doList(QuerySqmImpl.java:509) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:427) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.query.spi.AbstractSelectionQuery.getSingleResult(AbstractSelectionQuery.java:564) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$DeferredQueryInvocationHandler.invoke(SharedEntityManagerCreator.java:415) ~[spring-orm-6.1.3.jar:6.1.3]
+	at jdk.proxy2/jdk.proxy2.$Proxy184.getSingleResult(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:223) ~[spring-data-jpa-3.2.2.jar:3.2.2]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:92) ~[spring-data-jpa-3.2.2.jar:3.2.2]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:149) ~[spring-data-jpa-3.2.2.jar:3.2.2]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:137) ~[spring-data-jpa-3.2.2.jar:3.2.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.2.2.jar:3.2.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.2.2.jar:3.2.2]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164) ~[spring-data-commons-3.2.2.jar:3.2.2]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.2.2.jar:3.2.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.3.jar:6.1.3]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70) ~[spring-data-commons-3.2.2.jar:3.2.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.3.jar:6.1.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.1.3.jar:6.1.3]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385) ~[spring-tx-6.1.3.jar:6.1.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.3.jar:6.1.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.3.jar:6.1.3]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.3.jar:6.1.3]
+	... 29 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'u1_0.avatar_url' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:968) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:246) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	... 66 common frames omitted
+
+2026-02-03T23:44:08.125+05:30  INFO 18192 --- [cms] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-03T23:44:08.127+05:30  INFO 18192 --- [cms] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-03T23:44:08.134+05:30  INFO 18192 --- [cms] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  15.227 s
+[INFO] Finished at: 2026-02-03T23:44:08+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.2.2:run (default-cli) on project cms: Process terminated with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

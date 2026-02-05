@@ -1,0 +1,1668 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------------< com.cms:cms >-----------------------------
+[INFO] Building cms 1.0.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.2:run (default-cli) > test-compile @ cms >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ cms ---
+[INFO] Copying 3 resources from src\main\resources to target\classes
+[INFO] Copying 7 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ cms ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ cms ---
+[INFO] skip non existing resourceDirectory C:\Users\sree\Desktop\cms\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ cms ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.2.2:run (default-cli) < test-compile @ cms <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.2:run (default-cli) @ cms ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2026-02-03T23:48:31.677+05:30  INFO 20980 --- [cms] [           main] com.cms.CmsApplication                   : Starting CmsApplication using Java 25.0.2 with PID 20980 (C:\Users\sree\Desktop\cms\target\classes started by sree in C:\Users\sree\Desktop\cms)
+2026-02-03T23:48:31.680+05:30 DEBUG 20980 --- [cms] [           main] com.cms.CmsApplication                   : Running with Spring Boot v3.2.2, Spring v6.1.3
+2026-02-03T23:48:31.681+05:30  INFO 20980 --- [cms] [           main] com.cms.CmsApplication                   : No active profile set, falling back to 1 default profile: "default"
+2026-02-03T23:48:32.831+05:30  INFO 20980 --- [cms] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-03T23:48:32.934+05:30  INFO 20980 --- [cms] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 9 JPA repository interfaces.
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/C:/Users/sree/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.18/tomcat-embed-core-10.1.18.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2026-02-03T23:48:33.846+05:30  INFO 20980 --- [cms] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-03T23:48:33.857+05:30  INFO 20980 --- [cms] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-03T23:48:33.858+05:30  INFO 20980 --- [cms] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2026-02-03T23:48:33.936+05:30  INFO 20980 --- [cms] [           main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2026-02-03T23:48:33.937+05:30  INFO 20980 --- [cms] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2182 ms
+2026-02-03T23:48:34.064+05:30  INFO 20980 --- [cms] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-03T23:48:34.245+05:30  INFO 20980 --- [cms] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2801827a
+2026-02-03T23:48:34.249+05:30  INFO 20980 --- [cms] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-03T23:48:35.154+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Creating database history table with name: cms_db.databasechangelog
+2026-02-03T23:48:35.276+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Reading from cms_db.databasechangelog
+2026-02-03T23:48:35.314+05:30  WARN 20980 --- [cms] [           main] liquibase.executor                       : Integer display width is deprecated and will be removed in a future release.
+2026-02-03T23:48:35.450+05:30  INFO 20980 --- [cms] [           main] liquibase.lockservice                    : Successfully acquired change log lock
+2026-02-03T23:48:35.452+05:30  INFO 20980 --- [cms] [           main] liquibase.command                        : Using deploymentId: 0142715452
+2026-02-03T23:48:35.454+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Reading from cms_db.databasechangelog
+Running Changeset: db/changelog/changes/001-create-users-table.yaml::001-create-users-table::cms-system
+2026-02-03T23:48:35.611+05:30  WARN 20980 --- [cms] [           main] liquibase.executor                       : Integer display width is deprecated and will be removed in a future release.
+2026-02-03T23:48:35.613+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Table users created
+2026-02-03T23:48:35.633+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Index idx_users_email created
+2026-02-03T23:48:35.653+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Index idx_users_username created
+2026-02-03T23:48:35.654+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/001-create-users-table.yaml::001-create-users-table::cms-system ran successfully in 93ms
+Running Changeset: db/changelog/changes/001-create-users-table.yaml::001-create-refresh-tokens-table::cms-system
+2026-02-03T23:48:35.761+05:30  WARN 20980 --- [cms] [           main] liquibase.executor                       : Integer display width is deprecated and will be removed in a future release.
+2026-02-03T23:48:35.761+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Table refresh_tokens created
+2026-02-03T23:48:35.857+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to refresh_tokens (user_id)
+2026-02-03T23:48:35.880+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Index idx_refresh_tokens_token created
+2026-02-03T23:48:35.902+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Index idx_refresh_tokens_user_id created
+2026-02-03T23:48:35.903+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/001-create-users-table.yaml::001-create-refresh-tokens-table::cms-system ran successfully in 236ms
+Running Changeset: db/changelog/changes/002-create-roles-permissions.yaml::002-create-roles-table::cms-system
+2026-02-03T23:48:35.951+05:30  WARN 20980 --- [cms] [           main] liquibase.executor                       : Integer display width is deprecated and will be removed in a future release.
+2026-02-03T23:48:35.951+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Table roles created
+2026-02-03T23:48:35.954+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/002-create-roles-permissions.yaml::002-create-roles-table::cms-system ran successfully in 40ms
+Running Changeset: db/changelog/changes/002-create-roles-permissions.yaml::002-create-permissions-table::cms-system
+2026-02-03T23:48:36.003+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Table permissions created
+2026-02-03T23:48:36.029+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Index idx_permissions_resource_action created
+2026-02-03T23:48:36.031+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/002-create-roles-permissions.yaml::002-create-permissions-table::cms-system ran successfully in 64ms
+Running Changeset: db/changelog/changes/002-create-roles-permissions.yaml::002-create-user-roles-table::cms-system
+2026-02-03T23:48:36.072+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Table user_roles created
+2026-02-03T23:48:36.123+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Primary key added to user_roles (user_id, role_id)
+2026-02-03T23:48:36.188+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to user_roles (user_id)
+2026-02-03T23:48:36.255+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to user_roles (role_id)
+2026-02-03T23:48:36.256+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/002-create-roles-permissions.yaml::002-create-user-roles-table::cms-system ran successfully in 210ms
+Running Changeset: db/changelog/changes/002-create-roles-permissions.yaml::002-create-role-permissions-table::cms-system
+2026-02-03T23:48:36.306+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Table role_permissions created
+2026-02-03T23:48:36.367+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Primary key added to role_permissions (role_id, permission_id)
+2026-02-03T23:48:36.424+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to role_permissions (role_id)
+2026-02-03T23:48:36.475+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to role_permissions (permission_id)
+2026-02-03T23:48:36.477+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/002-create-roles-permissions.yaml::002-create-role-permissions-table::cms-system ran successfully in 208ms
+Running Changeset: db/changelog/changes/003-create-content-tables.yaml::003-create-categories-table::cms-system
+2026-02-03T23:48:36.511+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Table categories created
+2026-02-03T23:48:36.568+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to categories (parent_id)
+2026-02-03T23:48:36.589+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Index idx_categories_slug created
+2026-02-03T23:48:36.612+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Index idx_categories_parent_id created
+2026-02-03T23:48:36.612+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/003-create-content-tables.yaml::003-create-categories-table::cms-system ran successfully in 124ms
+Running Changeset: db/changelog/changes/003-create-content-tables.yaml::003-create-tags-table::cms-system
+2026-02-03T23:48:36.645+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Table tags created
+2026-02-03T23:48:36.663+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Index idx_tags_slug created
+2026-02-03T23:48:36.663+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/003-create-content-tables.yaml::003-create-tags-table::cms-system ran successfully in 45ms
+Running Changeset: db/changelog/changes/003-create-content-tables.yaml::003-create-contents-table::cms-system
+2026-02-03T23:48:36.697+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Table contents created
+2026-02-03T23:48:36.753+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to contents (author_id)
+2026-02-03T23:48:36.773+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Index idx_contents_slug created
+2026-02-03T23:48:36.791+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Index idx_contents_status created
+2026-02-03T23:48:36.811+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Index idx_contents_type created
+2026-02-03T23:48:36.835+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Index idx_contents_author_id created
+2026-02-03T23:48:36.854+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Index idx_contents_published_at created
+2026-02-03T23:48:36.855+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/003-create-content-tables.yaml::003-create-contents-table::cms-system ran successfully in 182ms
+Running Changeset: db/changelog/changes/003-create-content-tables.yaml::003-create-content-meta-table::cms-system
+2026-02-03T23:48:36.876+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Table content_meta created
+2026-02-03T23:48:36.919+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to content_meta (content_id)
+2026-02-03T23:48:36.940+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Index idx_content_meta_content_key created
+2026-02-03T23:48:36.941+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/003-create-content-tables.yaml::003-create-content-meta-table::cms-system ran successfully in 79ms
+Running Changeset: db/changelog/changes/003-create-content-tables.yaml::003-create-content-revisions-table::cms-system
+2026-02-03T23:48:36.967+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Table content_revisions created
+2026-02-03T23:48:37.018+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to content_revisions (content_id)
+2026-02-03T23:48:37.088+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to content_revisions (author_id)
+2026-02-03T23:48:37.120+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Index idx_content_revisions_content_id created
+2026-02-03T23:48:37.121+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/003-create-content-tables.yaml::003-create-content-revisions-table::cms-system ran successfully in 173ms
+Running Changeset: db/changelog/changes/003-create-content-tables.yaml::003-create-content-categories-table::cms-system
+2026-02-03T23:48:37.152+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Table content_categories created
+2026-02-03T23:48:37.187+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Primary key added to content_categories (content_id, category_id)
+2026-02-03T23:48:37.253+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to content_categories (content_id)
+2026-02-03T23:48:37.327+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to content_categories (category_id)
+2026-02-03T23:48:37.327+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/003-create-content-tables.yaml::003-create-content-categories-table::cms-system ran successfully in 194ms
+Running Changeset: db/changelog/changes/003-create-content-tables.yaml::003-create-content-tags-table::cms-system
+2026-02-03T23:48:37.368+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Table content_tags created
+2026-02-03T23:48:37.415+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Primary key added to content_tags (content_id, tag_id)
+2026-02-03T23:48:37.476+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to content_tags (content_id)
+2026-02-03T23:48:37.532+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to content_tags (tag_id)
+2026-02-03T23:48:37.532+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/003-create-content-tables.yaml::003-create-content-tags-table::cms-system ran successfully in 193ms
+Running Changeset: db/changelog/changes/004-create-media-table.yaml::004-create-media-table::cms-system
+2026-02-03T23:48:37.573+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Table media created
+2026-02-03T23:48:37.638+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to media (uploader_id)
+2026-02-03T23:48:37.660+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Index idx_media_uploader_id created
+2026-02-03T23:48:37.677+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Index idx_media_mime_type created
+2026-02-03T23:48:37.697+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Index idx_media_created_at created
+2026-02-03T23:48:37.698+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/004-create-media-table.yaml::004-create-media-table::cms-system ran successfully in 148ms
+Running Changeset: db/changelog/changes/004-create-media-table.yaml::004-add-featured-image-fk::cms-system
+2026-02-03T23:48:37.790+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Foreign key constraint added to contents (featured_image_id)
+2026-02-03T23:48:37.791+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/004-create-media-table.yaml::004-add-featured-image-fk::cms-system ran successfully in 87ms
+Running Changeset: db/changelog/changes/005-seed-initial-data.yaml::005-seed-permissions::cms-system
+2026-02-03T23:48:37.804+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:48:37.805+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:48:37.807+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:48:37.808+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:48:37.810+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:48:37.812+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:48:37.814+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:48:37.814+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:48:37.815+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:48:37.816+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:48:37.818+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:48:37.819+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:48:37.819+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:48:37.821+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : New row inserted into permissions
+2026-02-03T23:48:37.823+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/005-seed-initial-data.yaml::005-seed-permissions::cms-system ran successfully in 23ms
+Running Changeset: db/changelog/changes/005-seed-initial-data.yaml::005-seed-roles::cms-system
+2026-02-03T23:48:37.833+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : New row inserted into roles
+2026-02-03T23:48:37.833+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : New row inserted into roles
+2026-02-03T23:48:37.835+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : New row inserted into roles
+2026-02-03T23:48:37.836+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : New row inserted into roles
+2026-02-03T23:48:37.838+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/005-seed-initial-data.yaml::005-seed-roles::cms-system ran successfully in 8ms
+Running Changeset: db/changelog/changes/005-seed-initial-data.yaml::005-seed-admin-permissions::cms-system
+2026-02-03T23:48:37.851+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Custom SQL executed
+2026-02-03T23:48:37.854+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/005-seed-initial-data.yaml::005-seed-admin-permissions::cms-system ran successfully in 12ms
+Running Changeset: db/changelog/changes/005-seed-initial-data.yaml::005-seed-editor-permissions::cms-system
+2026-02-03T23:48:37.864+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Custom SQL executed
+2026-02-03T23:48:37.866+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/005-seed-initial-data.yaml::005-seed-editor-permissions::cms-system ran successfully in 8ms
+Running Changeset: db/changelog/changes/005-seed-initial-data.yaml::005-seed-author-permissions::cms-system
+2026-02-03T23:48:37.876+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Custom SQL executed
+2026-02-03T23:48:37.879+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/005-seed-initial-data.yaml::005-seed-author-permissions::cms-system ran successfully in 9ms
+Running Changeset: db/changelog/changes/005-seed-initial-data.yaml::005-seed-viewer-permissions::cms-system
+2026-02-03T23:48:37.886+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Custom SQL executed
+2026-02-03T23:48:37.887+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/005-seed-initial-data.yaml::005-seed-viewer-permissions::cms-system ran successfully in 4ms
+Running Changeset: db/changelog/changes/005-seed-initial-data.yaml::005-seed-default-category::cms-system
+2026-02-03T23:48:37.899+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : New row inserted into categories
+2026-02-03T23:48:37.901+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : ChangeSet db/changelog/changes/005-seed-initial-data.yaml::005-seed-default-category::cms-system ran successfully in 7ms
+Running Changeset: db/changelog/changes/006-add-missing-columns.yaml::006-add-avatar-url-to-users::cms-system
+2026-02-03T23:48:37.910+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Marking ChangeSet: "db/changelog/changes/006-add-missing-columns.yaml::006-add-avatar-url-to-users::cms-system" as ran despite precondition failure due to onFail='MARK_RAN': 
+          db/changelog/db.changelog-master.yaml : Not precondition failed
+
+Running Changeset: db/changelog/changes/006-add-missing-columns.yaml::006-add-is-active-to-users::cms-system
+2026-02-03T23:48:37.915+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Marking ChangeSet: "db/changelog/changes/006-add-missing-columns.yaml::006-add-is-active-to-users::cms-system" as ran despite precondition failure due to onFail='MARK_RAN': 
+          db/changelog/db.changelog-master.yaml : Not precondition failed
+
+Running Changeset: db/changelog/changes/006-add-missing-columns.yaml::006-add-timestamps-to-users::cms-system
+2026-02-03T23:48:37.921+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Marking ChangeSet: "db/changelog/changes/006-add-missing-columns.yaml::006-add-timestamps-to-users::cms-system" as ran despite precondition failure due to onFail='MARK_RAN': 
+          db/changelog/db.changelog-master.yaml : Not precondition failed
+
+Running Changeset: db/changelog/changes/006-add-missing-columns.yaml::006-add-password-hash-to-users::cms-system
+2026-02-03T23:48:37.928+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Marking ChangeSet: "db/changelog/changes/006-add-missing-columns.yaml::006-add-password-hash-to-users::cms-system" as ran despite precondition failure due to onFail='MARK_RAN': 
+          db/changelog/db.changelog-master.yaml : Not precondition failed
+
+Running Changeset: db/changelog/changes/006-add-missing-columns.yaml::006-add-display-name-to-users::cms-system
+2026-02-03T23:48:37.933+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Marking ChangeSet: "db/changelog/changes/006-add-missing-columns.yaml::006-add-display-name-to-users::cms-system" as ran despite precondition failure due to onFail='MARK_RAN': 
+          db/changelog/db.changelog-master.yaml : Not precondition failed
+
+Running Changeset: db/changelog/changes/006-add-missing-columns.yaml::006-add-email-to-users::cms-system
+2026-02-03T23:48:37.938+05:30  INFO 20980 --- [cms] [           main] liquibase.changelog                      : Marking ChangeSet: "db/changelog/changes/006-add-missing-columns.yaml::006-add-email-to-users::cms-system" as ran despite precondition failure due to onFail='MARK_RAN': 
+          db/changelog/db.changelog-master.yaml : Not precondition failed
+
+2026-02-03T23:48:37.946+05:30  INFO 20980 --- [cms] [           main] liquibase.util                           : UPDATE SUMMARY
+2026-02-03T23:48:37.947+05:30  INFO 20980 --- [cms] [           main] liquibase.util                           : Run:                         28
+2026-02-03T23:48:37.947+05:30  INFO 20980 --- [cms] [           main] liquibase.util                           : Previously run:               0
+2026-02-03T23:48:37.947+05:30  INFO 20980 --- [cms] [           main] liquibase.util                           : Filtered out:                 0
+2026-02-03T23:48:37.947+05:30  INFO 20980 --- [cms] [           main] liquibase.util                           : -------------------------------
+2026-02-03T23:48:37.947+05:30  INFO 20980 --- [cms] [           main] liquibase.util                           : Total change sets:           28
+2026-02-03T23:48:37.947+05:30  INFO 20980 --- [cms] [           main] liquibase.util                           : Update summary generated
+2026-02-03T23:48:37.949+05:30  INFO 20980 --- [cms] [           main] liquibase.command                        : Update command completed successfully.
+Liquibase: Update has been successful. Rows affected: 78
+2026-02-03T23:48:37.952+05:30  INFO 20980 --- [cms] [           main] liquibase.lockservice                    : Successfully released change log lock
+2026-02-03T23:48:37.953+05:30  INFO 20980 --- [cms] [           main] liquibase.command                        : Command execution complete
+2026-02-03T23:48:38.031+05:30  INFO 20980 --- [cms] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-03T23:48:38.079+05:30  INFO 20980 --- [cms] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2026-02-03T23:48:38.112+05:30  INFO 20980 --- [cms] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-03T23:48:38.368+05:30  INFO 20980 --- [cms] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-03T23:48:38.410+05:30  WARN 20980 --- [cms] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-03T23:48:39.869+05:30  INFO 20980 --- [cms] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-03T23:48:39.874+05:30  INFO 20980 --- [cms] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-03T23:48:40.232+05:30  INFO 20980 --- [cms] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-03T23:48:41.048+05:30 DEBUG 20980 --- [cms] [           main] c.cms.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2026-02-03T23:48:41.762+05:30  INFO 20980 --- [cms] [           main] com.cms.service.LocalStorageService      : Upload directory initialized: C:\Users\sree\Desktop\cms\uploads
+2026-02-03T23:48:42.361+05:30  INFO 20980 --- [cms] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@790a772e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e05309b, org.springframework.security.web.context.SecurityContextHolderFilter@7ef4f59b, org.springframework.security.web.header.HeaderWriterFilter@3cfe0d76, org.springframework.web.filter.CorsFilter@34775ff7, org.springframework.web.filter.CorsFilter@5366a4af, org.springframework.security.web.authentication.logout.LogoutFilter@56e59aef, com.cms.security.JwtAuthenticationFilter@6434d8d9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a89840a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4051059e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@797f1aea, org.springframework.security.web.session.SessionManagementFilter@2083512a, org.springframework.security.web.access.ExceptionTranslationFilter@d2b2097, org.springframework.security.web.access.intercept.AuthorizationFilter@45f9e02c]
+2026-02-03T23:48:42.798+05:30  INFO 20980 --- [cms] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2026-02-03T23:48:42.807+05:30  INFO 20980 --- [cms] [           main] com.cms.CmsApplication                   : Started CmsApplication in 11.677 seconds (process running for 12.359)
+2026-02-03T23:48:42.811+05:30  INFO 20980 --- [cms] [           main] com.cms.config.DataInitializer           : Starting data initialization...
+2026-02-03T23:48:42.936+05:30 DEBUG 20980 --- [cms] [           main] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.created_at,
+        r1_0.description,
+        r1_0.is_system,
+        r1_0.name 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-02-03T23:48:42.966+05:30 DEBUG 20980 --- [cms] [           main] org.hibernate.SQL                        : 
+    select
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource 
+    from
+        role_permissions p1_0 
+    join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        p1_0.role_id=?
+2026-02-03T23:48:42.977+05:30 DEBUG 20980 --- [cms] [           main] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.created_at,
+        r1_0.description,
+        r1_0.is_system,
+        r1_0.name 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-02-03T23:48:42.979+05:30 DEBUG 20980 --- [cms] [           main] org.hibernate.SQL                        : 
+    select
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource 
+    from
+        role_permissions p1_0 
+    join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        p1_0.role_id=?
+2026-02-03T23:48:42.982+05:30 DEBUG 20980 --- [cms] [           main] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.created_at,
+        r1_0.description,
+        r1_0.is_system,
+        r1_0.name 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-02-03T23:48:42.984+05:30 DEBUG 20980 --- [cms] [           main] org.hibernate.SQL                        : 
+    select
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource 
+    from
+        role_permissions p1_0 
+    join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        p1_0.role_id=?
+2026-02-03T23:48:42.988+05:30 DEBUG 20980 --- [cms] [           main] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.display_name,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password_hash,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-03T23:48:42.989+05:30  INFO 20980 --- [cms] [           main] com.cms.config.DataInitializer           : Creating new admin user: admin@example.com
+2026-02-03T23:48:43.169+05:30 DEBUG 20980 --- [cms] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (avatar_url, created_at, display_name, email, is_active, password_hash, updated_at, username) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2026-02-03T23:48:43.240+05:30 DEBUG 20980 --- [cms] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        user_roles
+        (user_id, role_id) 
+    values
+        (?, ?)
+2026-02-03T23:48:43.253+05:30  INFO 20980 --- [cms] [           main] com.cms.config.DataInitializer           : Data initialization completed.
+2026-02-03T23:49:18.552+05:30  INFO 20980 --- [cms] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-03T23:49:18.554+05:30  INFO 20980 --- [cms] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-03T23:49:18.556+05:30  INFO 20980 --- [cms] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-02-03T23:49:18.623+05:30 ERROR 20980 --- [cms] [nio-8080-exec-1] c.c.s.JwtAuthenticationEntryPoint        : Unauthorized error: Full authentication is required to access this resource
+2026-02-03T23:49:18.724+05:30 ERROR 20980 --- [cms] [nio-8080-exec-8] c.c.s.JwtAuthenticationEntryPoint        : Unauthorized error: Full authentication is required to access this resource
+2026-02-03T23:50:42.370+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+    limit
+        ?
+2026-02-03T23:50:42.380+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+    limit
+        ?
+2026-02-03T23:50:42.384+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.created_at,
+        r1_0.description,
+        r1_0.is_system,
+        r1_0.name 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-02-03T23:50:42.393+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource 
+    from
+        role_permissions p1_0 
+    join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        p1_0.role_id=?
+2026-02-03T23:50:42.714+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-9] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (avatar_url, created_at, display_name, email, is_active, password_hash, updated_at, username) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2026-02-03T23:50:42.723+05:30  INFO 20980 --- [cms] [nio-8080-exec-9] com.cms.service.AuthService              : User registered: ko54@gmail.com
+2026-02-03T23:50:42.728+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-9] org.hibernate.SQL                        : 
+    insert 
+    into
+        user_roles
+        (user_id, role_id) 
+    values
+        (?, ?)
+2026-02-03T23:51:09.451+05:30 DEBUG 20980 --- [cms] [io-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.display_name,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password_hash,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-03T23:51:09.455+05:30 DEBUG 20980 --- [cms] [io-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.is_system,
+        r1_1.name,
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    left join
+        role_permissions p1_0 
+            on r1_1.id=p1_0.role_id 
+    left join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        r1_0.user_id=?
+2026-02-03T23:51:09.878+05:30 DEBUG 20980 --- [cms] [io-8080-exec-10] org.hibernate.SQL                        : 
+    insert 
+    into
+        refresh_tokens
+        (created_at, expires_at, is_revoked, token, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+2026-02-03T23:51:09.897+05:30  INFO 20980 --- [cms] [io-8080-exec-10] com.cms.service.AuthService              : User logged in: ko54@gmail.com
+2026-02-03T23:51:10.021+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.display_name,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password_hash,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.is_system,
+        r1_1.name,
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    left join
+        role_permissions p1_0 
+            on r1_1.id=p1_0.role_id 
+    left join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        u1_0.id=?
+2026-02-03T23:51:10.033+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.display_name,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password_hash,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.is_system,
+        r1_1.name,
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    left join
+        role_permissions p1_0 
+            on r1_1.id=p1_0.role_id 
+    left join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        u1_0.id=?
+2026-02-03T23:51:10.186+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.display_name,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password_hash,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.is_system,
+        r1_1.name,
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    left join
+        role_permissions p1_0 
+            on r1_1.id=p1_0.role_id 
+    left join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        u1_0.id=?
+2026-02-03T23:51:10.201+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.display_name,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password_hash,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.is_system,
+        r1_1.name,
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    left join
+        role_permissions p1_0 
+            on r1_1.id=p1_0.role_id 
+    left join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        u1_0.id=?
+2026-02-03T23:51:10.229+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.display_name,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password_hash,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.is_system,
+        r1_1.name,
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    left join
+        role_permissions p1_0 
+            on r1_1.id=p1_0.role_id 
+    left join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        u1_0.id=?
+2026-02-03T23:51:10.304+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.author_id,
+        c1_0.content_html,
+        c1_0.content_json,
+        c1_0.created_at,
+        c1_0.excerpt,
+        c1_0.featured_image_id,
+        c1_0.published_at,
+        c1_0.slug,
+        c1_0.status,
+        c1_0.title,
+        c1_0.type,
+        c1_0.updated_at 
+    from
+        contents c1_0 
+    where
+        c1_0.status=? 
+    order by
+        c1_0.created_at desc 
+    limit
+        ?, ?
+2026-02-03T23:51:10.304+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.author_id,
+        c1_0.content_html,
+        c1_0.content_json,
+        c1_0.created_at,
+        c1_0.excerpt,
+        c1_0.featured_image_id,
+        c1_0.published_at,
+        c1_0.slug,
+        c1_0.status,
+        c1_0.title,
+        c1_0.type,
+        c1_0.updated_at 
+    from
+        contents c1_0 
+    order by
+        c1_0.created_at desc 
+    limit
+        ?, ?
+2026-02-03T23:51:10.304+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.author_id,
+        c1_0.content_html,
+        c1_0.content_json,
+        c1_0.created_at,
+        c1_0.excerpt,
+        c1_0.featured_image_id,
+        c1_0.published_at,
+        c1_0.slug,
+        c1_0.status,
+        c1_0.title,
+        c1_0.type,
+        c1_0.updated_at 
+    from
+        contents c1_0 
+    where
+        c1_0.status=? 
+    order by
+        c1_0.created_at desc 
+    limit
+        ?, ?
+2026-02-03T23:51:10.369+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.display_name,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password_hash,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.is_system,
+        r1_1.name,
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    left join
+        role_permissions p1_0 
+            on r1_1.id=p1_0.role_id 
+    left join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        u1_0.id=?
+2026-02-03T23:51:10.369+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.display_name,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password_hash,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.is_system,
+        r1_1.name,
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    left join
+        role_permissions p1_0 
+            on r1_1.id=p1_0.role_id 
+    left join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        u1_0.id=?
+2026-02-03T23:51:10.383+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.display_name,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password_hash,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.is_system,
+        r1_1.name,
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    left join
+        role_permissions p1_0 
+            on r1_1.id=p1_0.role_id 
+    left join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        u1_0.id=?
+2026-02-03T23:51:10.384+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.author_id,
+        c1_0.content_html,
+        c1_0.content_json,
+        c1_0.created_at,
+        c1_0.excerpt,
+        c1_0.featured_image_id,
+        c1_0.published_at,
+        c1_0.slug,
+        c1_0.status,
+        c1_0.title,
+        c1_0.type,
+        c1_0.updated_at 
+    from
+        contents c1_0 
+    order by
+        c1_0.created_at desc 
+    limit
+        ?, ?
+2026-02-03T23:51:10.386+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.author_id,
+        c1_0.content_html,
+        c1_0.content_json,
+        c1_0.created_at,
+        c1_0.excerpt,
+        c1_0.featured_image_id,
+        c1_0.published_at,
+        c1_0.slug,
+        c1_0.status,
+        c1_0.title,
+        c1_0.type,
+        c1_0.updated_at 
+    from
+        contents c1_0 
+    where
+        c1_0.status=? 
+    order by
+        c1_0.created_at desc 
+    limit
+        ?, ?
+2026-02-03T23:51:10.386+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.display_name,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password_hash,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.is_system,
+        r1_1.name,
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    left join
+        role_permissions p1_0 
+            on r1_1.id=p1_0.role_id 
+    left join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        u1_0.id=?
+2026-02-03T23:51:10.406+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.author_id,
+        c1_0.content_html,
+        c1_0.content_json,
+        c1_0.created_at,
+        c1_0.excerpt,
+        c1_0.featured_image_id,
+        c1_0.published_at,
+        c1_0.slug,
+        c1_0.status,
+        c1_0.title,
+        c1_0.type,
+        c1_0.updated_at 
+    from
+        contents c1_0 
+    where
+        c1_0.status=? 
+    order by
+        c1_0.created_at desc 
+    limit
+        ?, ?
+2026-02-03T23:51:10.409+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.author_id,
+        c1_0.content_html,
+        c1_0.content_json,
+        c1_0.created_at,
+        c1_0.excerpt,
+        c1_0.featured_image_id,
+        c1_0.published_at,
+        c1_0.slug,
+        c1_0.status,
+        c1_0.title,
+        c1_0.type,
+        c1_0.updated_at 
+    from
+        contents c1_0 
+    order by
+        c1_0.updated_at desc 
+    limit
+        ?, ?
+2026-02-03T23:51:10.434+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.display_name,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password_hash,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.is_system,
+        r1_1.name,
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    left join
+        role_permissions p1_0 
+            on r1_1.id=p1_0.role_id 
+    left join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        u1_0.id=?
+2026-02-03T23:51:10.449+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.author_id,
+        c1_0.content_html,
+        c1_0.content_json,
+        c1_0.created_at,
+        c1_0.excerpt,
+        c1_0.featured_image_id,
+        c1_0.published_at,
+        c1_0.slug,
+        c1_0.status,
+        c1_0.title,
+        c1_0.type,
+        c1_0.updated_at 
+    from
+        contents c1_0 
+    order by
+        c1_0.updated_at desc 
+    limit
+        ?, ?
+2026-02-03T23:51:15.397+05:30 DEBUG 20980 --- [cms] [io-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.display_name,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password_hash,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.is_system,
+        r1_1.name,
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    left join
+        role_permissions p1_0 
+            on r1_1.id=p1_0.role_id 
+    left join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        u1_0.id=?
+2026-02-03T23:51:15.420+05:30 DEBUG 20980 --- [cms] [io-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.author_id,
+        c1_0.content_html,
+        c1_0.content_json,
+        c1_0.created_at,
+        c1_0.excerpt,
+        c1_0.featured_image_id,
+        c1_0.published_at,
+        c1_0.slug,
+        c1_0.status,
+        c1_0.title,
+        c1_0.type,
+        c1_0.updated_at 
+    from
+        contents c1_0 
+    order by
+        c1_0.created_at desc 
+    limit
+        ?, ?
+2026-02-03T23:51:15.452+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.display_name,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password_hash,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.is_system,
+        r1_1.name,
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    left join
+        role_permissions p1_0 
+            on r1_1.id=p1_0.role_id 
+    left join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        u1_0.id=?
+2026-02-03T23:51:15.484+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.author_id,
+        c1_0.content_html,
+        c1_0.content_json,
+        c1_0.created_at,
+        c1_0.excerpt,
+        c1_0.featured_image_id,
+        c1_0.published_at,
+        c1_0.slug,
+        c1_0.status,
+        c1_0.title,
+        c1_0.type,
+        c1_0.updated_at 
+    from
+        contents c1_0 
+    order by
+        c1_0.created_at desc 
+    limit
+        ?, ?
+2026-02-03T23:51:15.766+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.display_name,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password_hash,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.is_system,
+        r1_1.name,
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    left join
+        role_permissions p1_0 
+            on r1_1.id=p1_0.role_id 
+    left join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        u1_0.id=?
+2026-02-03T23:51:15.800+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        m1_0.id,
+        m1_0.alt_text,
+        m1_0.created_at,
+        m1_0.description,
+        m1_0.file_size,
+        m1_0.filename,
+        m1_0.metadata,
+        m1_0.mime_type,
+        m1_0.original_name,
+        m1_0.storage_path,
+        m1_0.storage_type,
+        m1_0.title,
+        m1_0.uploader_id 
+    from
+        media m1_0 
+    order by
+        m1_0.created_at desc 
+    limit
+        ?, ?
+2026-02-03T23:51:15.845+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.display_name,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password_hash,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.is_system,
+        r1_1.name,
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    left join
+        role_permissions p1_0 
+            on r1_1.id=p1_0.role_id 
+    left join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        u1_0.id=?
+2026-02-03T23:51:15.871+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        m1_0.id,
+        m1_0.alt_text,
+        m1_0.created_at,
+        m1_0.description,
+        m1_0.file_size,
+        m1_0.filename,
+        m1_0.metadata,
+        m1_0.mime_type,
+        m1_0.original_name,
+        m1_0.storage_path,
+        m1_0.storage_type,
+        m1_0.title,
+        m1_0.uploader_id 
+    from
+        media m1_0 
+    order by
+        m1_0.created_at desc 
+    limit
+        ?, ?
+2026-02-03T23:51:16.971+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.display_name,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password_hash,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.is_system,
+        r1_1.name,
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    left join
+        role_permissions p1_0 
+            on r1_1.id=p1_0.role_id 
+    left join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        u1_0.id=?
+2026-02-03T23:51:16.985+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.display_name,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password_hash,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.is_system,
+        r1_1.name,
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    left join
+        role_permissions p1_0 
+            on r1_1.id=p1_0.role_id 
+    left join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        u1_0.id=?
+2026-02-03T23:51:16.998+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        t1_0.id,
+        t1_0.created_at,
+        t1_0.name,
+        t1_0.slug 
+    from
+        tags t1_0 
+    order by
+        t1_0.name
+2026-02-03T23:51:17.034+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order 
+    from
+        categories c1_0 
+    order by
+        c1_0.sort_order,
+        c1_0.name
+2026-02-03T23:51:17.076+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.display_name,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password_hash,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.is_system,
+        r1_1.name,
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    left join
+        role_permissions p1_0 
+            on r1_1.id=p1_0.role_id 
+    left join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        u1_0.id=?
+2026-02-03T23:51:17.364+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        t1_0.id,
+        t1_0.created_at,
+        t1_0.name,
+        t1_0.slug 
+    from
+        tags t1_0 
+    order by
+        t1_0.name
+2026-02-03T23:51:17.383+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.display_name,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password_hash,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.is_system,
+        r1_1.name,
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    left join
+        role_permissions p1_0 
+            on r1_1.id=p1_0.role_id 
+    left join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        u1_0.id=?
+2026-02-03T23:51:17.399+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order 
+    from
+        categories c1_0 
+    order by
+        c1_0.sort_order,
+        c1_0.name
+2026-02-03T23:51:17.735+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.display_name,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password_hash,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.is_system,
+        r1_1.name,
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    left join
+        role_permissions p1_0 
+            on r1_1.id=p1_0.role_id 
+    left join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        u1_0.id=?
+2026-02-03T23:51:17.743+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.display_name,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password_hash,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.is_system,
+        r1_1.name,
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    left join
+        role_permissions p1_0 
+            on r1_1.id=p1_0.role_id 
+    left join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        u1_0.id=?
+2026-02-03T23:51:17.751+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        t1_0.id,
+        t1_0.created_at,
+        t1_0.name,
+        t1_0.slug 
+    from
+        tags t1_0 
+    order by
+        t1_0.name
+2026-02-03T23:51:17.788+05:30 DEBUG 20980 --- [cms] [io-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.display_name,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password_hash,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.is_system,
+        r1_1.name,
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    left join
+        role_permissions p1_0 
+            on r1_1.id=p1_0.role_id 
+    left join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        u1_0.id=?
+2026-02-03T23:51:17.796+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order 
+    from
+        categories c1_0 
+    order by
+        c1_0.sort_order,
+        c1_0.name
+2026-02-03T23:51:17.804+05:30 DEBUG 20980 --- [cms] [io-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        t1_0.id,
+        t1_0.created_at,
+        t1_0.name,
+        t1_0.slug 
+    from
+        tags t1_0 
+    order by
+        t1_0.name
+2026-02-03T23:51:17.842+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.created_at,
+        u1_0.display_name,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password_hash,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.is_system,
+        r1_1.name,
+        p1_0.role_id,
+        p1_1.id,
+        p1_1.action,
+        p1_1.description,
+        p1_1.name,
+        p1_1.resource,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    left join
+        role_permissions p1_0 
+            on r1_1.id=p1_0.role_id 
+    left join
+        permissions p1_1 
+            on p1_1.id=p1_0.permission_id 
+    where
+        u1_0.id=?
+2026-02-03T23:51:17.862+05:30 DEBUG 20980 --- [cms] [nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order 
+    from
+        categories c1_0 
+    order by
+        c1_0.sort_order,
+        c1_0.name

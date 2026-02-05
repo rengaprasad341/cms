@@ -1,0 +1,12 @@
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Field	Type	Null	Key	Default	Extra
+id	bigint	NO	PRI	NULL	auto_increment
+username	varchar(50)	NO	UNI	NULL	
+password	varchar(255)	NO		NULL	
+role	varchar(20)	YES		NULL	
+avatar_url	varchar(500)	YES		NULL	
+is_active	tinyint(1)	NO		1	
+created_at	timestamp	NO		CURRENT_TIMESTAMP	DEFAULT_GENERATED
+updated_at	timestamp	NO		CURRENT_TIMESTAMP	DEFAULT_GENERATED
+password_hash	varchar(255)	NO		NULL	
+display_name	varchar(255)	YES		NULL	
